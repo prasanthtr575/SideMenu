@@ -1,1 +1,1 @@
-SideMenu using HTML 5 CSS 3 and JavaScript
+SideMenu using HTML5, CSS3 and JavaScript
