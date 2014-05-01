@@ -1,0 +1,35 @@
+<!DOCTTPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/sideMenu.js"></script>
+        <title>Side Menu</title>
+    </head>
+    <body>
+        <div class="sideMenu">
+            <div class="menu">
+                <h4>Pick a Color</h4>
+                <ul>
+                    <li onclick="pickColor(this)">Red <span id="palff0000" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Orange <span id="palffa500" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Yellow <span id="palffff00" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Green <span id="pal008000" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Blue <span id="pal0000ff" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Violet <span id="palee82ee" class="colorPal"></span></li>
+                    <li onclick="pickColor(this)">Default <span id="paldddddd" class="colorPal"></span></li>
+                </ul>
+                <script>
+                    currentElement = document.querySelectorAll('ul li')[6];
+                    currentElement.style.setProperty('background-color', '#800000')
+                </script>
+            </div>
+            <div class="detail" data-sideMenu="close">
+                <header id="detailHead">
+                    <button id="menuBtn" onclick="moveDetail()"></button>
+                    Side Menu
+                </header>
+            </div>
+        </div>
+    </body>
+</html>
